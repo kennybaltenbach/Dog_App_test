@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+ margin-top: 60px;
+ background-color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fetch_button {
+  font-family: roboto, sans-serif;
+  font-size: 19px;
+  border-style: none;  
+  background-color: rgba(149, 82, 211, 0.80);
+  color: white;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+  font-weight: 400;
+  margin-top: 30px;
+  box-shadow: 4px 3px 19px 0px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+}
+
+.fetch_button:hover {
+  cursor: pointer;
+  background-color: rgb(149, 82, 211);
+  box-shadow: none;
+}
+
+.fetch_button:active {
+  background-color: rgba(149, 82, 211, 0.80);
+  box-shadow: none;
+}
+
+.hidden{
+  display: none;
+}
+
+.dog_image {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(149, 82, 211);
+}
+
+@media (max-width: 500px) {
+  .dog_image {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+  }
+}
